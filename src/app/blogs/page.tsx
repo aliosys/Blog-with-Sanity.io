@@ -22,7 +22,7 @@ export default async function Blogs() {
               className="border border-gray-500 rounded-lg p-1 hover:scale-105 hover-border-blue-500 tansition"
               key={post._id}>
               <h2 className="text-2xl">{post.title}</h2>
-              <Link href={`/blogs/${post.slug.current}`}>View Blog</Link>
+              <Link href={`/blogs/${post.slug}`}>View Blog</Link>
 
               {/* <PortableText value={post.content} /> */}
             </div>

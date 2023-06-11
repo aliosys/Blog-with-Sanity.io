@@ -14,7 +14,7 @@ export async function getPosts() {
 	content,
   "image": image.asset->url,
   url,
-  slug
+  "slug": slug.current,
   }`);
 }
 
@@ -32,7 +32,7 @@ export async function getPost(slug: string) {
     title,
     content,
     url,
-    slug,
+    "slug": slug.current,
     "image": image.asset->url,
     }`,
     {slug},
